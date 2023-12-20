@@ -1,0 +1,27 @@
+### Profile Create
+POST localhost:8080/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk5NjU2MTksImlkIjoyLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2NzAwNTIwMTksImlzcyI6Ik1hemdpIn0.Mo-AJfBeSWYt2qVhusT2cG_Y_vqLdAtGIdjRSzOKaskgUNmgHf9-Jv7ZzzsPvTU6jqXJqGIlXKDrf7FEFwCAjA
+
+{
+  "name": "Toshmat",
+  "surname": "Toshmatov",
+  "phone": "3333",
+  "password": "3333",
+  "role": "MODERATOR"
+}
+
+
+### Get List
+GET localhost:8080/profile/list?page=0&size=10
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2Njk5NTg3ODksImlkIjoxLCJyb2xlIjoiVVNFUiIsImV4cCI6MTY3MDA0NTE4OSwiaXNzIjoiTWF6Z2kifQ.ENGUax4V56KRQgmOuTrDqV-HKseZ6eQX8SD93GyYUn-uay39DXAKt91Urttwo__QyGvQTrLAKJtnXFmUC-VTVg
+
+
+
+### Profile Filter
+POST localhost:8080/profile/filter?page=0&size=10
+Content-Type: application/json
+
+{
+ "name": "Alish"
+}

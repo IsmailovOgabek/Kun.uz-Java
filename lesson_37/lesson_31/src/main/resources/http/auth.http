@@ -1,0 +1,45 @@
+### Registration
+POST localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+
+  "name": "Alish",
+  "surname": "Aliyev",
+  "phone": "9989157212132",
+  "password": "123vali",
+  "email": "bigmangcom@gmail2.com"
+}
+
+###
+
+
+### Authorization user
+POST localhost:8080/auth/login
+Content-Type: application/json
+Accept-Language: RU
+
+{
+  "phone": "9989157212132",
+  "password": "123vali2"
+}
+
+### Authorization Admin
+POST localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "phone": "7777",
+  "password": "7777"
+}
+
+### Send Sms
+
+POST https://notify.eskiz.uz/api/message/sms/send
+Content-Type: application/json
+Authorization: Bearer token...
+
+{
+  "mobile_phone": "998932222077",
+  "message":"How are you"
+}

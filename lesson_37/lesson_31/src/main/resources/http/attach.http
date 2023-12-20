@@ -1,0 +1,12 @@
+POST http://192.168.0.130:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="1.PNG"
+
+< C:\Users\BigMan\Desktop\temp\1.PNG
+
+
+### downliad
+
+GET http://localhost:8080/attach/upload
